@@ -1,0 +1,1 @@
+(()=>{let e=document.querySelector(".btn__kaz"),t=document.querySelector(".btn__rus");e.addEventListener("click",(function(){t.classList.remove("active"),e.classList.add("active")})),t.addEventListener("click",(function(){t.classList.add("active"),e.classList.remove("active")}))})();

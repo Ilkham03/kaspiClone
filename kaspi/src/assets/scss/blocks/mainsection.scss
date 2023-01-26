@@ -1,0 +1,36 @@
+.main__section{
+    background-color: #f0f0f0;
+    display: block;
+    margin-top: 7.5rem;
+}
+
+.main__flex{
+    height: 40rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.section__mainlogo{
+    display: flex;
+    align-items: center;
+}
+
+.section__phone{  
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+}
+
+.section__phone img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+    max-width: 29rem;
+    
+}

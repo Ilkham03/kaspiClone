@@ -1,0 +1,36 @@
+.oplata__content{
+    background-color: $white;
+    margin-top: 2.5rem;
+    padding: 5rem 5rem;
+    border-radius: 2rem;
+
+    
+}
+
+.oplata__methods{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 9rem;
+}
+
+
+.method{
+    text-align: center;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    color: $black;
+}
+
+.method p{
+    margin-top: 2rem;
+}   
+
+.method img{
+    width: 31rem;
+}
+
+
+.total__link--oplata{
+    text-align: center;
+    margin-top: 3rem;
+}

@@ -1,0 +1,39 @@
+.header__nav{
+    margin-right: 10rem;
+}
+
+.nav__list{
+    display: flex;
+    // justify-content: space-between;
+
+}
+
+.nav__item{
+    // position: relative;
+
+    &:hover{
+        .nav__link{
+            color: $black;
+        }
+
+        >.nav__modal{
+            display: block;
+        }
+    }
+
+}
+
+.nav__link{
+    position: relative;
+    text-decoration: none;
+    color: #00000066;
+    font-size: 1.7rem; 
+    margin-right: 6rem;
+    list-style: none;
+
+
+    transition: color .3s linear;
+}
+
+
+

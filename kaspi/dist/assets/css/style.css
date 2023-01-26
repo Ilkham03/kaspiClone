@@ -1,0 +1,584 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    font-size: 1.4rem;
+    color: white;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    line-height: 1.2;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section {
+    display: block;
+}
+
+div {
+    display: block;
+}
+
+.main__section, .product, .biznes, .oplata, .partner, .qrcod {
+    display: block;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.heading {
+    font-size: 5rem;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+.total__link {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #0089d0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.total__link:hover {
+    text-decoration: underline;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.header {
+    display: flex;
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    z-index: 100;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    height: 7.5rem;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.header__nav {
+    margin-right: 10rem;
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__item:hover .nav__link {
+    color: #000;
+}
+
+.nav__item:hover > .nav__modal {
+    display: block;
+}
+
+.nav__link {
+    position: relative;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 1.7rem;
+    margin-right: 6rem;
+    list-style: none;
+    transition: color 0.3s linear;
+}
+
+.nav__modal {
+    display: none;
+    position: absolute;
+    width: 60rem;
+    height: auto;
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 1.6rem;
+    transition: 3s linear;
+    top: 5.5rem;
+    left: calc(50% - 30rem + 0.5px);
+    color: #000;
+}
+
+.nav__modal--gid {
+    width: 194px;
+    height: 128px;
+    left: calc(50% + 36px);
+}
+
+.nav__modal__group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 50rem;
+    padding: 4rem 5rem;
+    align-items: flex-start;
+}
+
+.nav__modal__column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    z-index: 1;
+}
+
+.nav__modal__header {
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding-bottom: 2rem;
+}
+
+.nav__modal__link {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+    padding-bottom: 2rem;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.4s linear;
+}
+
+.nav__modal__link:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.footer {
+    margin: 0 auto;
+    margin-top: 20rem;
+}
+
+.footer__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5rem 0;
+}
+
+.footer__section::after,
+.footer__section::before {
+    display: block;
+    content: "";
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.08);
+    margin: 0 auto;
+}
+
+.footer__section::before {
+    width: 100%;
+    max-width: 130rem;
+}
+
+.footer__section::after {
+    width: 100%;
+}
+
+.footer__item span {
+    font-size: 1.4rem;
+    color: #000;
+    font-weight: 400;
+}
+
+.footer__header {
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 1.5rem;
+}
+
+.footer__links {
+    display: grid;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 1.5rem;
+    padding: 0.8rem 0;
+    transition: color 0.4s linear;
+}
+
+.footer__link:hover {
+    color: #000;
+}
+
+.language {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    font-size: 1.6rem;
+    color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0 1.5rem;
+}
+
+.btn.active {
+    border-radius: 1.2rem;
+    border: 0.1rem solid #000;
+    padding: 0.7rem 1rem;
+    color: rgba(0, 0, 0, 0.4);
+    color: #000;
+}
+
+.footer__footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.footer__text {
+    max-width: 600px;
+    font-size: 1.4rem;
+    color: #4A4A4A;
+    vertical-align: inherit;
+}
+
+.social__media {
+    width: 100%;
+    max-width: 30rem;
+}
+
+.icons {
+    margin-left: 2rem;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 2.5rem;
+    transition: color 0.3s linear;
+}
+
+.icons:hover {
+    color: black;
+}
+
+.main__section {
+    background-color: #f0f0f0;
+    display: block;
+    margin-top: 7.5rem;
+}
+
+.main__flex {
+    height: 40rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section__mainlogo {
+    display: flex;
+    align-items: center;
+}
+
+.section__phone {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.section__phone img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-width: 29rem;
+}
+
+.product__wrapper {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.product__blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.product__item {
+    background-color: #fff;
+    padding: 4rem;
+    border-radius: 2rem;
+    min-height: 30rem;
+    flex-direction: column;
+    cursor: pointer;
+    width: 50%;
+    max-width: 588px;
+    margin: 12px 0;
+    transition: box-shadow 0.4s ease;
+    color: #000;
+}
+
+.product__item:hover {
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.35);
+}
+
+.product__title {
+    font-size: 2rem;
+    line-height: 1.6rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.product__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product__content p {
+    font-size: 3rem;
+    color: #000;
+    line-height: 3.5rem;
+    max-width: 38rem;
+}
+
+.biznes {
+    padding-top: 5rem;
+}
+
+.biznes__content {
+    display: flex;
+    margin-top: 5rem;
+}
+
+.biznes__left {
+    margin-right: 1.2rem;
+    width: 50%;
+    display: flex;
+}
+
+.left__content {
+    background-color: #fff;
+    width: 100%;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 3rem 4rem 4rem;
+}
+
+.blocks__left__title {
+    font-size: 3rem;
+    margin-top: 2rem;
+    color: #000;
+}
+
+.blocks__oplata {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+
+.blocks__oplata span {
+    font-size: 2rem;
+    color: #000;
+}
+
+.oplata__img {
+    display: flex;
+    margin-top: 1.2rem;
+}
+
+.oplata__img img {
+    width: 6rem;
+    height: 4.5rem;
+    margin-right: 0.8rem;
+}
+
+.blocks__right img {
+    max-width: 28rem;
+    max-height: 50rem;
+}
+
+.button {
+    cursor: pointer;
+    margin-top: 3rem;
+    background-color: #0089d0;
+    color: #fff;
+    font-size: 2rem;
+    border: none;
+    border-radius: 0.8rem;
+    width: 20rem;
+    height: 4.7rem;
+    transition: background-color 0.3s linear;
+}
+
+.button:hover {
+    background-color: #005784;
+}
+
+.biznes__right {
+    margin-left: 1.2rem;
+    width: 50%;
+    display: flex;
+    display: block;
+}
+
+.card__blocks {
+    text-decoration: none;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 2rem;
+    padding: 4rem;
+}
+
+.card__blocks:first-child {
+    margin-bottom: 2rem;
+    margin-top: 0;
+}
+
+.card__blocks__title {
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.card__blocks__main {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.6rem 0 2.5rem;
+}
+
+.blocks__main__text {
+    font-size: 30px;
+    color: #000;
+    line-height: 36px;
+    max-width: 350px;
+}
+
+.qrcod {
+    margin: 10rem 0;
+}
+
+.img {
+    margin: 6rem auto 0;
+    display: flex;
+    justify-content: center;
+    max-width: 40rem;
+    padding: 3.3rem;
+    background: #fff;
+    border-radius: 2.4rem;
+}
+
+.qr__img {
+    width: 34rem;
+}
+
+.oplata__content {
+    background-color: #fff;
+    margin-top: 2.5rem;
+    padding: 5rem 5rem;
+    border-radius: 2rem;
+}
+
+.oplata__methods {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 9rem;
+}
+
+.method {
+    text-align: center;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    color: #000;
+}
+
+.method p {
+    margin-top: 2rem;
+}
+
+.method img {
+    width: 31rem;
+}
+
+.total__link--oplata {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.partner__content {
+    background-color: #fff;
+    margin-top: 2.5rem;
+    padding: 5rem 5rem;
+    border-radius: 2rem;
+}
+
+.services__part {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 9rem;
+}
+
+.service {
+    background-color: #f5f5f5;
+    padding: 4rem;
+    border-radius: 1.2rem;
+    max-width: 57rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 2.6rem;
+}
+
+.service:first-child {
+    margin: 0;
+}
+
+.service__title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 3.5rem;
+    color: #000;
+}
+
+.service__text {
+    margin: 1.6rem 0;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    color: #000;
+}
+
+.service__action {
+    margin-top: auto;
+}

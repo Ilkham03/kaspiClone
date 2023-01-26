@@ -1,0 +1,96 @@
+@import "vars.scss";
+//@import "vendor/reset.css";
+html{
+    font-size: 62.5%;
+    
+}
+
+body {
+    margin: 0;padding: 0;
+    background-color: #f5f5f5;
+    font-size: 1.4rem;
+    color: white;
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    line-height: 1.2;
+    
+}
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section {
+    display: block;
+}
+
+div{
+    display: block;
+}
+
+.main__section, .product, .biznes, .oplata, .partner, .qrcod{
+    display: block;
+}
+.wrapper{
+    overflow: hidden;
+    // display: flex;
+    // flex-direction: column;
+    // min-height: 100vh;
+}
+ul{
+    margin: 0; padding: 0;
+}
+
+// p{
+//     margin: 0; padding: 0;
+// }
+
+
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.heading{
+    font-size: 5rem;
+    font-weight: 500;
+    color: $black;
+    text-align: center;
+}
+
+*,
+*:after,
+*:before{
+    box-sizing: border-box;
+}
+
+
+.total__link{
+    font-size: 2rem;
+    font-weight: 400;
+    color: $link;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+img{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+// blocks for scss
+@import "blocks/header.scss";
+@import "blocks/nav.scss";
+@import "blocks/navmodal.scss";
+@import "blocks/footer.scss";
+@import "blocks/mainsection.scss";
+@import "blocks/product.scss";
+@import "blocks/biznes.scss";
+@import "blocks/qr.scss";
+@import "blocks/oplata.scss";
+@import "blocks/partner.scss";
+
+
+
+
+
+
